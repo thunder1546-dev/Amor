@@ -45,30 +45,7 @@ body::before {
     to { opacity: 1; }
 }
 
-/* Botão de play estilizado */
-.play-button {
-    background-color: #008669;
-    color: white;
-    font-size: 18px;
-    border: none;
-    padding: 15px 25px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    margin-top: 20px; /* Espaçamento superior */
-}
 
-/* Efeito de hover no botão */
-.play-button:hover {
-    background-color: #0375f7;
-    transform: scale(1.1); /* Aumenta o botão quando passa o mouse */
-}
-
-
-.play-button:hover {
-    background-color: #e04e32;
-    transform: scale(1.1);
-}
 
 /* Estilo do temporizador */
 .temporizador {
@@ -108,7 +85,7 @@ body::before {
             color: #ffffff;
             font-size: 18px;
             font-family: 'Verdana', sans-serif;
-            margin: 20px auto;
+            margin: 50px auto;
             width: 80%;
             text-align: center;
             line-height: 1.6;
@@ -207,7 +184,25 @@ body::before {
   
 </style>
     
+</head>
+<body>
+    <h1>A lua está linda!</h1>
+    <audio id="musica" autoplay loop>
+        <source src="Enquanto Houver Razões.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
 
+    <script>
+        // Adiciona um evento para garantir que o áudio seja reproduzido automaticamente
+        window.onload = function() {
+            var audio = document.getElementById("musica");
+            audio.play().catch(function(error) {
+                console.log("Erro ao tentar reproduzir o áudio:", error);
+            });
+        };
+    </script>
+</body>
+</html>
 
 
 
@@ -216,8 +211,6 @@ body::before {
 Amei viver todas as fases e momentos ao seu lado e ainda tenho muito o que aprender sobre o amor mas quero aprender com você, sei que não sou uma pessoa fácil de lidar e tenho muitos defeitos para corrigir, mas quero melhorar por você, por mim, por nós.
 Te prometo cada batida do meu coração, te prometo que teremos problemas, mas nunca sem solução. Não te prometo um final feliz, pois não quero que tenha um fim.</p>
 
-
-<button class="play-button" onclick="document.getElementById('audio').play()">Play Música</button>
 
 <audio id="audio" loop>
     <source src="Enquanto Houver Razões.mp3" type="audio/mp3">
