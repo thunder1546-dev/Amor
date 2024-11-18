@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo</title>
+    
+    <style>
+        /* Estilo para a tela de bloqueio */
+        #tela-bloqueio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Mais escuro */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* Desfoque */
+}
+
+        #entrar-btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        #entrar-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tela de bloqueio inicial -->
+    <div id="tela-bloqueio">
+        <h1>Jackson & Jamile, a lua está linda!</h1>
+        <p>Clique no botão para entrar e liberar o conteúdo.</p>
+        <button id="entrar-btn">Entrar</button>
+    </div>
+
+    <!-- Conteúdo principal -->
+    
+    <audio id="musica" loop>
+        <source src="Enquanto Houver Razões.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script>
+        // Função para liberar o acesso ao site e tocar a música
+        document.getElementById('entrar-btn').addEventListener('click', function() {
+            // Esconde a tela de bloqueio
+            document.getElementById('tela-bloqueio').style.display = 'none';
+
+            // Toca a música
+            var audio = document.getElementById('musica');
+            audio.play().catch(function(error) {
+                console.log("Erro ao tentar reproduzir o áudio:", error);
+            });
+        });
+    </script>
+</body>
+</html>
+    
+    <!-- Importando a fonte Rouge Script do Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+     <style>
+         body {
+            font-family: 'Arial', sans-serif;
+            background-image: url(back\ 2.jpg); /* Altere o caminho da imagem */
+            background-size: cover; /* Faz a imagem cobrir toda a tela */
+            background-position: center; /* Centraliza a imagem */
+            background-attachment: fixed; /* A imagem fica fixa ao rolar a página */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+/* Sobreposição escura para melhorar a visibilidade do texto */
+body::before {
+    content: '';
+    position: fixed; /* Fixado para cobrir toda a tela */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Camada escura para melhorar a leitura */
+    z-index: -1; /* Coloca a sobreposição atrás do conteúdo */
+            
+         }
+         h1 {
+             font-family: 'Rouge Script', cursive; /* Aplicando a fonte Rouge Script */
+             color: #f53838;
+             font-size: 64px;
+             margin-top: 30px;
+             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra no título */
+             animation: fadeIn 2s ease-out; /* Animação de fade-in */
+    }
+    /* Animação de fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+     /* Estilo do temporizador */
+     .temporizador {
+            font-size: 24px;
+            color: white;
+            margin-top: 50px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+            /* Caixas do temporizador com tamanhos ajustados */
+    .timer-box {
+        display: block;
+        width: 80px; /* Largura reduzida */
+        height: 60px; /* Altura reduzida */
+        margin: 10px auto;
+        padding: 5px; /* Reduzido para menos espaço interno */
+        border: 2px solid #fafafa;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.986);
+        font-size: 20px; /* Tamanho da fonte ajustado */
+        text-align: center;
+        font-weight: bold;
+        color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .number-label {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .unit-label {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        <!-- Temporizador com caixas -->
+    <div class="temporizador">
+        <div class="timer-box" id="days">
+            <span class="number-label">00</span>
+            <span class="unit-label">dias</span>
+        </div>
+        <div class="timer-box" id="hours">
+            <span class="number-label">00</span>
+            <span class="unit-label">horas</span>
+        </div>
+        <div class="timer-box" id="minutes">
+            <span class="number-label">00</span>
+            <span class="unit-label">minutos</span>
+        </div>
+        <div class="timer-box" id="seconds">
+            <span class="number-label">00</span>
+            <span class="unit-label">segundos</span>
+        </div>
+    </div>
+
+/* Adicionando estilo ao texto dentro das caixas */
+.timer-label {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+        .texto-descricao {
+            color: #ffffff;
+            font-size: 18px;
+            font-family: 'Verdana', sans-serif;
+            margin: 50px auto;
+            width: 80%;
+            text-align: center;
+            line-height: 1.6;
+        }
+       
+        #titulo-temporizador {
+    font-size: 28px;
+    color: #ff4500; /* Cor do título */
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Lobster', cursive; /* Nova fonte aplicada */
+}
+
+    
+        #temporizador {
+            font-size: 24px;
+            color: #008080; /* Cor do temporizador */
+            font-weight: bold;
+            margin-top: 30px;
+    </style>
+</head>
+<body>
+    <h1>Jackson & Jamile</h1>
+    <style>
+        /* Estilo do slider */
+        .slider {
+            width: 100%;
+            max-width: 220px; /* Limite de largura para o slider */
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        /* Ajustando o tamanho das imagens */
+        .slide {
+            width: 100%; /* As imagens ocupam 100% da largura do container */
+            height: 400px; /* Altura fixa para as imagens */
+            object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+        }
+        /* Ajustando o tamanho e a borda das imagens */
+        .slide {
+            width: 100%; /* As imagens ocupam 100% da largura do container */
+            height: 400px; /* Altura fixa para as imagens */
+            object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+            border-radius: 20px; /* Bordas arredondadas nas imagens */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slider de Imagens -->
+    <div class="slider">
+        <div class="slides">
+            <img src="vida.JPG" class="slide" alt="Imagem 1">
+            <img src="casal.jpg" class="slide" alt="Imagem 2">
+            <img src="IMG_0345.JPG" class="slide" alt="Imagem 3">
+            <img src="buquê.jpg" class="slide" alt="Imagem 4">
+            <img src="mi.jpg" class="slide" alt="Imagem 5">
+            <img src="mão 1.jpg" class="slide" alt="Imagem 5,1">
+            <img src="video.png" class="slide" alt="Imagem 6">
+            <img src="kkk.png" class="slide" alt="Imagem 7">
+            <img src="mão 2.jpg" class="slide" alt="Imagem 8">
+        </div>
+    </div>
+
+    <script>
+        let index = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        // Função para mostrar a próxima imagem
+        function showNextSlide() {
+            index = (index + 1) % totalSlides; // Faz a contagem das imagens em loop
+            document.querySelector('.slides').style.transform = `translateX(-${index * 100}%)`; // Move o container de slides
+        }
+
+        // Trocar de imagem a cada 3 segundos
+        setInterval(showNextSlide, 3000); // Muda a imagem a cada 3 segundos
+    </script>
+
+</body>
+</html>
+  
+</style>
+    
+</head>
+<body>
+    
+    <audio id="musica" autoplay loop>
+        <source src="Enquanto Houver Razões.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script>
+        // Adiciona um evento para garantir que o áudio seja reproduzido automaticamente
+        window.onload = function() {
+            var audio = document.getElementById("musica");
+            audio.play().catch(function(error) {
+                console.log("Erro ao tentar reproduzir o áudio:", error);
+            });
+        };
+    </script>
+</body>
+</html>
+
+
+
+
+    <p class="texto-descricao">Desde o primeiro momento em que te vi, sentir uma conexão incrível. Eu sabia que tinha encontrado alguém especial e depois de muitas desavenças, entre altos e baixos, idas e voltas, finalmente percebi que eu tinha encontrado o amor da minha vida. 
+Amei viver todas as fases e momentos ao seu lado e ainda tenho muito o que aprender sobre o amor mas quero aprender com você, sei que não sou uma pessoa fácil de lidar e tenho muitos defeitos para corrigir, mas quero melhorar por você, por mim, por nós.
+Te prometo cada batida do meu coração, te prometo que teremos problemas, mas nunca sem solução. Não te prometo um final feliz, pois não quero que tenha um fim.</p>
+
+
+<audio id="meuAudio" src="Enquanto Houver Razões.mp3" loop></audio>
+    
+</audio>
+
+    <!-- Título para o temporizador -->
+    <h2 id="titulo-temporizador">Juntos há</h2>
+    
+    <!-- Temporizador com caixas -->
+    <div class="temporizador">
+    
+        <div class="timer-box" id="days">00</div><span class="timer-label">dias</span>
+        <div class="timer-box" id="hours">00</div><span class="timer-label">horas</span>
+        <div class="timer-box" id="minutes">00</div><span class="timer-label">minutos</span>
+        <div class="timer-box" id="seconds">00</div><span class="timer-label">segundos</span>
+    </div>
+
+    <script>
+        // Temporizador de tempo de relacionamento (apenas exemplo)
+        var startDate = new Date('2024-11-16T17:35:00'); // Data de início do relacionamento
+
+        function updateTimer() {
+            var currentDate = new Date();
+            var timeDiff = currentDate - startDate;
+            var days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+            // Atualiza as caixas com os valores
+            document.getElementById('days').innerText = days < 10 ? '0' + days : days;
+            document.getElementById('hours').innerText = hours < 10 ? '0' + hours : hours;
+            document.getElementById('minutes').innerText = minutes < 10 ? '0' + minutes : minutes;
+            document.getElementById('seconds').innerText = seconds < 10 ? '0' + seconds : seconds;
+        }
+
+        setInterval(updateTimer, 1000); // Atualiza a cada segundo
+        updateTimer(); // Chama a função uma vez para iniciar imediatamente
+    </script>
+
+</body>
+</html>
