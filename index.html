@@ -281,16 +281,12 @@ body::before {
 </head>
 <body>
     
+    <audio id="musica" autoplay loop>
+        <source src="Enquanto Houver Razões.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
 
-    <script>
-        // Adiciona um evento para garantir que o áudio seja reproduzido automaticamente
-        window.onload = function() {
-            var audio = document.getElementById("musica");
-            audio.play().catch(function(error) {
-                console.log("Erro ao tentar reproduzir o áudio:", error);
-            });
-        };
-    </script>
+   
 </body>
 </html>
 
@@ -302,9 +298,6 @@ Amei viver todas as fases e momentos ao seu lado e ainda tenho muito o que apren
 Te prometo cada batida do meu coração, te prometo que teremos problemas, mas nunca sem solução. Não te prometo um final feliz, pois não quero que tenha um fim.</p>
 
 
-<audio id="meuAudio" src="Enquanto Houver Razões.mp3" loop></audio>
-    
-</audio>
 
     <!-- Título para o temporizador -->
     <h2 id="titulo-temporizador">Juntos há</h2>
