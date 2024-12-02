@@ -256,6 +256,22 @@ body::before {
     transform: scale(1.1); /* Aumenta o tamanho da imagem ao passar o mouse */
 }
 
+.slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            height: 450px; /* Define uma altura consistente */
+            object-fit: cover;
+        }
+
+        .slide img, .slide video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Garante proporções corretas */
+        }
 
 /* Botões de navegação */
 .prev, .next {
@@ -371,8 +387,33 @@ body::before {
             Seu navegador não suporta a exibição de vídeos.
         </video>
 
-        <img src="mo.jpg" class="slide" alt="Imagem 13">
-    
+        <img src="5c3a487d-605d-4347-b599-05562a0a5a41.JPEG" class="slide" alt="Imagem 13">
+        <img src="55a4acb5-f0a5-4434-9cfd-90e436eb0ab6.JPEG" class="slide" alt="Imagem 14">
+        <img src="62e5dc29-eb13-4d04-81e4-19f16b6ceac6.JPEG" class="slide" alt="Imagem 15">
+        <img src="83c6d835-8d57-492f-81cd-9eafbe20f32e.JPEG" class="slide" alt="Imagem 16">
+        <img src="696ba149-db04-451e-8c2a-a81e98cda8f1.JPEG" class="slide" alt="Imagem 17">
+        <img src="c002d301-1244-4048-8f2e-2a9414d394ff.JPEG" class="slide" alt="Imagem 18">
+        <img src="e012da6e-9b45-4de8-a1df-d6aa64ab603e.JPEG" class="slide" alt="Imagem 19">
+        <img src="IMG_4323.JPEG" class="slide" alt="Imagem 20">
+        <img src="mo.jpg" class="slide" alt="Imagem 21">
+
+          <!-- Terceiro vídeo no slider -->
+          <video class="slide" autoplay muted loop playsinline>
+            <source src="i know.MP4" type="video/mp4">
+            Seu navegador não suporta a exibição de vídeos.
+        </video>
+
+        <img src="temp_image_291A1A05-6F0B-4006-B383-EABC419FFDCC.JPEG" class="slide" alt="Imagem 22">
+        <img src="tymblr.JPEG" class="slide" alt="Imagem 23">
+        <img src="Imagem do WhatsApp de 2024-12-01 à(s) 20.23.13_859ffe3f.jpg" class="slide" alt="Imagem 24">
+        <img src="IMG_4299.JPEG" class="slide" alt="Imagem 25">
+
+                   <!-- Quarto vídeo no slider -->
+                   <video class="slide" autoplay muted loop playsinline>
+                    <source src="acho que me perdi.MP4" type="video/mp4">
+                    Seu navegador não suporta a exibição de vídeos.
+                </video>
+
     </div>
     <!-- Botões de navegação -->
     <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
