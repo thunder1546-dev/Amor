@@ -5,92 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Te amo</title>
 
-    <!-- Novo título -->
-<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=6yHrzeQMCUdBlnGJ-GlEKRDb5rboGY5TNTahYqtSfr4FAQStzS4vsmKZou5-ruKsFr-uhx7iKD2xYw0UpcZ7iE414xgu8ATrHLmlqU_kwkBzrKFCrub_KVR03FcVUcsRBLqACAyDbxGfs7y0Rt3zIJt2RMbE3ipCgcpgz7Ta2tYCzxSsvJD3F8r91aVtjmGwOqFVYSj2GkViIL3uReVrbE6n3qA5DGnJmSmmLmy2A10D3CAekDQHSlHYiOjWyf-7FP8Q5a7qXsHHpbnNhHh8-w" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvNTU4ODM0MDQ3MjY3MjQxOTkwLzEzMTc2OTg2ODk4NDE1MDAxOTAvaW5kZXguaHRtbD9leD02Nzg5Mjk0OSZpcz02Nzg3ZDdjOSZobT01Y2EzNTEwMDU5NWMwMDU1NWEwNTJkYmE1YTgyYWU2YTRiZjkzMGJkNTc2NzJkY2MwMGM5YTI5NGVlODA0MDRiJg"/><h1 id="titulo-principal">Jackson & Jamile</h1>
-    
-<!-- Importação de fontes -->
+    <!-- Importação de fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 
-    <style>
-        
-        #titulo-principal {
-        font-family: 'Rouge Script', cursive;
-        color: #ff4500;
-        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
-        font-size: 52px;
-        margin-top: 50px;
-    }
-    #entrar-btn {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    margin-top: 15px;
-}
-
-/* Estilo para o foco do botão */
-#entrar-btn:focus {
-    outline: 3px solid #ff4500; /* Adiciona uma borda visível ao redor do botão quando ele está em foco */
-    background-color: #45a049; /* Altera a cor de fundo quando o botão estiver em foco */
-}
-
-/* Sobreposição escura para melhorar a visibilidade do texto */
-body::before {
-    content: '';
-    position: fixed; /* Fixa a sobreposição no fundo da tela */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4); /* Camada escura (40% opaca) */
-    z-index: -1; /* Coloca a sobreposição atrás do conteúdo */
-    pointer-events: none; /* Garante que a sobreposição não atrapalhe a interação com outros elementos */
-}
-       
-
-        /* Estilo de fundo e sobreposição */
+  
+  <style>
+        /* Estilo geral */
         body {
-            font-family: 'Arial', sans-serif;
-            background-image: url('back\ 2.jpg'); /* Imagem de fundo */
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('back3.jpeg'); /* Imagem corrigida */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             text-align: center;
-            margin: 0;
-            padding: 0;
+            color: #fff;
         }
 
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.4); /* Sobreposição escura */
-            z-index: -1;
+        /* Estilo do título */
+        h1 {
+            font-family: 'Rouge Script', cursive;
+            font-size: 2.5rem;
+            color: #ff4500;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
         }
 
-        /* Estilos da tela de bloqueio */
+        /* Tela de bloqueio */
         #tela-bloqueio {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            color: #fff;
+            background: rgba(0, 0, 0, 0.8);
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
             z-index: 1000;
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(20px); /* Aumenta o desfoque */
         }
 
         #entrar-btn {
@@ -99,258 +55,144 @@ body::before {
             color: #fff;
             border: none;
             border-radius: 5px;
+            font-size: 1rem;
             cursor: pointer;
-            font-size: 18px;
-            margin-top: 15px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
         }
 
         #entrar-btn:hover {
             background-color: #45a049;
         }
 
-        /* Estilo do título principal */
-        h1 {
-            font-family: 'Rouge Script', cursive;
-            color: #f53838;
-            font-size: 64px;
-            margin-top: 30px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            animation: fadeIn 2s ease-out;
+        /* Galeria dinâmica */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-auto-rows: 100px;
+            gap: 15px;
+            margin: 20px auto;
+            padding: 10px;
+            max-width: 90%;
         }
 
-        /* Animação do fade-in */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        .gallery img, .gallery video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
         }
 
-        /* Estilo do temporizador */
-        .temporizador {
-            font-size: 24px;
-            color: white;
-            margin-top: 50px;
-            font-weight: bold;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        .gallery img:hover, .gallery video:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
         }
 
-        /* Caixas do temporizador */
-        .timer-box {
-            display: block;
-            width: 80px;
-            height: 60px;
-            margin: 10px auto;
-            padding: 5px;
-            border: 2px solid #fafafa;
+        /* Modal para visualização ampliada */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        .modal img, .modal video {
+            max-width: 90%;
+            max-height: 90%;
             border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.986);
-            font-size: 20px;
-            text-align: center;
-            font-weight: bold;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 2rem;
             color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
+
+        /* Temporizador */
+        .temporizador {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        .timer-box {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            width: 80px;
+            height: 100px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
         }
 
         .number-label {
             font-size: 40px;
-            font-weight: bold;
         }
 
         .unit-label {
-            font-size: 16px;
+            font-size: 18px;
             margin-top: 5px;
         }
 
-        @media (max-width: 600px) {
-    .temporizador {
-        flex-direction: column; /* Coloca as caixas em uma coluna em telas pequenas */
-        gap: 10px; /* Menor espaço entre as caixas */
-    }
-
-    .timer-box {
-        width: 80px;
-        height: 100px;
-        font-size: 24px; /* Ajusta o tamanho da fonte */
-    }
-
-    .number-label {
-        font-size: 36px; /* Ajuste do tamanho dos números */
-    }
-
-    .unit-label {
-        font-size: 14px;
-    }
-}
-
-        /* Descrição do texto */
+        /* Texto descritivo */
         .texto-descricao {
             color: #ffffff;
             font-size: 18px;
             font-family: 'Verdana', sans-serif;
-            margin: 50px auto;
+            margin: 30px auto;
             width: 80%;
             text-align: center;
             line-height: 1.6;
         }
 
-        /* Título do temporizador */
-        #titulo-temporizador {
-            font-size: 52px;
-            color: #ff4500;
-            font-weight: bold;
-            margin-top: 20px;
-            font-family: 'Rouge Script', cursive;
-        }
-        .number-label {
-        font-family: 'Roboto', sans-serif;
-    }
-    .unit-label {
-        font-family: 'Roboto', sans-serif;
-    }
+        /* Estilo responsivo */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
 
-/* Estilo do slider */
-.slider {
-    width: 100%;
-    max-width: 220px; /* Limite de largura para o slider */
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px; /* Bordas arredondadas para o container */
-}
-
-.slides {
-    display: flex;
-    transition: transform 1s ease-in-out; /* Efeito de transição suave */
-}
-
-.slide {
-    width: 100%;
-    height: 400px;
-    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
-    border-radius: 20px; /* Bordas arredondadas nas imagens */
-}
-
-/* Efeito de transição de opacidade nas imagens */
-.slides {
-    display: flex;
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Suaviza a transição */
-    opacity: 1;
-}
-
-.slides {
-    opacity: 0.7; /* Diminui a opacidade da imagem em transição */
-}
-/* Efeito de zoom nas imagens */
-.slide {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 20px;
-    transition: transform 0.5s ease; /* Transição suave */
-}
-
-.slide:hover {
-    transform: scale(1.1); /* Aumenta o tamanho da imagem ao passar o mouse */
-}
-
-.slides {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
+            #entrar-btn {
+                font-size: 0.9rem;
+                padding: 8px 15px;
+            }
         }
 
-        .slide {
-            min-width: 100%;
-            height: 450px; /* Define uma altura consistente */
-            object-fit: cover;
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            #entrar-btn {
+                font-size: 0.8rem;
+                padding: 6px 10px;
+            }
         }
-
-        .slide img, .slide video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Garante proporções corretas */
-        }
-
-/* Botões de navegação */
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    z-index: 10;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Torna o botão mais visível quando passa o mouse */
-}
-
-/* Estilo para o temporizador */
-.temporizador {
-    display: flex;
-    justify-content: center; /* Alinha os elementos no centro */
-    gap: 20px; /* Espaço entre as caixas */
-    margin-top: 20px; /* Espaçamento acima */
-}
-
-.timer-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    color: white;
-    font-weight: bold;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
-}
-
-.number-label {
-    font-size: 40px; /* Tamanho grande para os números */
-}
-
-.unit-label {
-    font-size: 18px; /* Tamanho menor para as unidades */
-    margin-top: 5px;
-}
-
-
-/* Adicionar uma sombra suave ao temporizador */
-.temporizador {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
-}
-
     </style>
 </head>
-
 <body>
     <!-- Tela de bloqueio -->
     <div id="tela-bloqueio">
-        <h1>Jackson & Jamile, a lua está linda!</h1>
-        <p>Clique no botão para entrar e liberar o conteúdo.</p>
-        <button id="entrar-btn" aria-label="Liberar conteúdo e tocar a música" aria-pressed="false">
-            Entrar
-        </button>
-    
-    
-        
+        <h1>Jackson & Jamile</h1>
+        <p>A lua está linda hoje! </p>
+        </p>Clique no botão para continuar.</p>
+        <button id="entrar-btn">Entrar</button>
     </div>
 
     <!-- Áudio -->
@@ -359,173 +201,155 @@ body::before {
         Seu navegador não suporta o elemento de áudio.
     </audio>
 
-    <!-- Slider de Imagens -->
-<div class="slider">
-    <div class="slides">
-        <img src="vida.JPG" class="slide" alt="Imagem 1">
-        <img src="casal.jpg" class="slide" alt="Imagem 2">
-        <img src="IMG_0345.JPG" class="slide" alt="Imagem 3">
-        <img src="buquê.jpg" class="slide" alt="Imagem 4">
-        <img src="mi.jpg" class="slide" alt="Imagem 5">
-        <img src="mão 1.jpg" class="slide" alt="Imagem 6">
-        <img src="video.png" class="slide" alt="Imagem 7">
-        <img src="kkk.png" class="slide" alt="Imagem 8">
-        <img src="mão 2.jpg" class="slide" alt="Imagem 9">
-        <img src="xd.jpg" class="slide" alt="Imagem 10">
-        <img src="joker.jpg" class="slide" alt="Imagem 11">
-        <img src="te amo.jpg" class="slide" alt="Imagem 12">
-       
-          <!-- Primeiro vídeo no slider -->
-          <video class="slide" autoplay muted loop playsinline>
-            <source src="vid 01.mp4" type="video/mp4">
-            Seu navegador não suporta a exibição de vídeos.
-        </video>
+    <!-- Temporizador -->
+    <h2 id="titulo-temporizador">Tempo Juntos:</h2>
+    <div class="temporizador">
+        <div class="timer-box" id="days">
+            <span class="number-label">00</span>
+            <span class="unit-label">dias</span>
+        </div>
+        <div class="timer-box" id="hours">
+            <span class="number-label">00</span>
+            <span class="unit-label">horas</span>
+        </div>
+        <div class="timer-box" id="minutes">
+            <span class="number-label">00</span>
+            <span class="unit-label">minutos</span>
+        </div>
+        <div class="timer-box" id="seconds">
+            <span class="number-label">00</span>
+            <span class="unit-label">segundos</span>
+        </div>
+    </div>
 
-        <!-- Segundo vídeo no slider -->
-        <video class="slide" autoplay muted loop playsinline>
+    <!-- Texto descritivo -->
+    <p class="texto-descricao">
+        Desde o primeiro momento em que te vi, senti uma conexão incrível. Eu sabia que tinha encontrado alguém especial e, depois de muitas desavenças, entre altos e baixos, idas e voltas, finalmente percebi que eu tinha encontrado o amor da minha vida. Amei viver todas as fases e momentos ao seu lado e ainda tenho muito o que aprender sobre o amor, mas quero aprender com você. Sei que não sou uma pessoa fácil de lidar e tenho muitos defeitos para corrigir, mas quero melhorar por você, por mim, por nós. Te prometo cada batida do meu coração, te prometo que teremos problemas, mas nunca sem solução. Não te prometo um final feliz, pois não quero que tenha um fim.
+    </p>
+
+    <!-- Galeria de Imagens e Vídeos -->
+    <div class="gallery">
+        <img src="casal.jpg" alt="Foto 1">
+        <img src="vida.jpg" alt="Foto 2">
+        <img src="video.png" alt="Foto 3">
+        <img src="mao1.jpg" alt="Foto 4">
+        <img src="mao2.jpg" alt="Foto 5">
+        <img src="mandraka.JPG" alt="Foto 6">
+        <img src="kkk.png" alt="Foto 7">
+        <img src="IMG_0345.JPG" alt="Foto 8">
+        <img src="buquê.jpg" alt="Foto 9">
+        <img src="Imagem do WhatsApp de 2024-11-18 à(s) 11.19.04_49602903.jpg" alt="Foto 10">
+        <img src="mi.jpg" alt="Foto 11">
+        <img src="mo.jpg" alt="Foto 12">
+        <img src="teamo.jpg" alt="Foto 13">
+        <img src="temp_image_291A1A05-6F0B-4006-B383-EABC419FFDCC.JPEG" alt="Foto 14">
+        <img src="tymblr.JPEG" alt="Foto 15">
+        <img src="IMG_4303.JPEG" alt="Foto 16">
+        <img src="IMG_4302.JPEG" alt="Foto 17">
+        <img src="IMG_4299.JPEG" alt="Foto 18">
+        <img src="Imagem do WhatsApp de 2024-12-01 à(s) 20.23.13_859ffe3f.jpg" alt="Foto 19">
+        <img src="IMG_4323.JPEG" alt="Foto 20">
+        <img src="IMG-20241120-WA0009.jpg" alt="Foto 21">
+        <img src="IMG-20241120-WA0007.jpg" alt="Foto 22">
+        <img src="IMG-20241120-WA0005.jpg" alt="Foto 23">
+        <img src="e012da6e-9b45-4de8-a1df-d6aa64ab603e.JPEG" alt="Foto 25">
+        <img src="696ba149-db04-451e-8c2a-a81e98cda8f1.JPEG" alt="Foto 26">
+        <img src="5c3a487d-605d-4347-b599-05562a0a5a41.JPEG" alt="Foto 27">
+        <img src="55a4acb5-f0a5-4434-9cfd-90e436eb0ab6.JPEG" alt="Foto 28">
+        <img src="62e5dc29-eb13-4d04-81e4-19f16b6ceac6.JPEG" alt="Foto 29">
+        <img src="IMG_4323.JPEG" alt="Foto 30">
+        <img src="mi2.JPEG" alt="Foto 31">
+        <img src="1F1B023A-7693-44A2-B0CC-4A841C20FDF1.JPEG" alt="Foto 32">
+        <img src="32F58079-3F26-45D6-B4F2-36606C9F8567.JPEG" alt="Foto 33">
+        <img src="48FF7E63-121B-439A-9D46-9B2502F5C36B.JPEG" alt="Foto 34">
+        <img src="73FAD4A4-5D0A-4760-A0C2-932CD6C95616.JPEG" alt="Foto 35">
+        <img src="785CBA09-7FAA-4D95-8984-4E8C31AB25CC.JPEG" alt="Foto 36">
+        <img src="3877CB0C-BDBA-4E71-887E-26DEEFD4F441.JPEG" alt="Foto 37">
+        <img src="ACCD47AB-CB36-4085-9EAE-F9B6B26D3099.JPEG" alt="Foto 38">
+        <img src="F58764CD-A279-44DE-8D80-F3E950591D5F.JPEG" alt="Foto 39">
+        <img src="IMG_4730.JPEG" alt="Foto 40">
+        
+
+
+        <video controls>
             <source src="vid 02.mp4" type="video/mp4">
             Seu navegador não suporta a exibição de vídeos.
         </video>
-
-        <img src="5c3a487d-605d-4347-b599-05562a0a5a41.JPEG" class="slide" alt="Imagem 13">
-        <img src="55a4acb5-f0a5-4434-9cfd-90e436eb0ab6.JPEG" class="slide" alt="Imagem 14">
-        <img src="62e5dc29-eb13-4d04-81e4-19f16b6ceac6.JPEG" class="slide" alt="Imagem 15">
-        <img src="83c6d835-8d57-492f-81cd-9eafbe20f32e.JPEG" class="slide" alt="Imagem 16">
-        <img src="696ba149-db04-451e-8c2a-a81e98cda8f1.JPEG" class="slide" alt="Imagem 17">
-        <img src="c002d301-1244-4048-8f2e-2a9414d394ff.JPEG" class="slide" alt="Imagem 18">
-        <img src="e012da6e-9b45-4de8-a1df-d6aa64ab603e.JPEG" class="slide" alt="Imagem 19">
-        <img src="IMG_4323.JPEG" class="slide" alt="Imagem 20">
-        <img src="mo.jpg" class="slide" alt="Imagem 21">
-
-          <!-- Terceiro vídeo no slider -->
-          <video class="slide" autoplay muted loop playsinline>
-            <source src="i know.MP4" type="video/mp4">
+        <video controls>
+            <source src="vid01.mp4" type="video/mp4">
             Seu navegador não suporta a exibição de vídeos.
         </video>
-
-        <img src="temp_image_291A1A05-6F0B-4006-B383-EABC419FFDCC.JPEG" class="slide" alt="Imagem 22">
-        <img src="tymblr.JPEG" class="slide" alt="Imagem 23">
-        <img src="Imagem do WhatsApp de 2024-12-01 à(s) 20.23.13_859ffe3f.jpg" class="slide" alt="Imagem 24">
-        <img src="IMG_4299.JPEG" class="slide" alt="Imagem 25">
-
-                   <!-- Quarto vídeo no slider -->
-                   <video class="slide" autoplay muted loop playsinline>
-                    <source src="acho que me perdi.MP4" type="video/mp4">
-                    Seu navegador não suporta a exibição de vídeos.
-                </video>
-
+        <video controls>
+            <source src="iknow.MP4" type="video/mp4">
+            Seu navegador não suporta a exibição de vídeos.
+        </video>
+        <video controls>
+            <source src="acho que me perdi.MP4" type="video/mp4">
+            Seu navegador não suporta a exibição de vídeos.
+        </video>
+        <video controls>
+            <source src="VID-20241120-WA0001.mp4" type="video/mp4">
+            Seu navegador não suporta a exibição de vídeos.
+        </video>
     </div>
-    <!-- Botões de navegação -->
-    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-    <button class="next" onclick="moveSlide(1)">&#10095;</button>
-</div>
 
-
-    <!-- Descrição do relacionamento -->
-    <p class="texto-descricao">
-        Desde o primeiro momento em que te vi, sentir uma conexão incrível. Eu sabia que tinha encontrado alguém especial e depois de muitas desavenças, entre altos e baixos, idas e voltas, finalmente percebi que eu tinha encontrado o amor da minha vida. Amei viver todas as fases e momentos ao seu lado e ainda tenho muito o que aprender sobre o amor, mas quero aprender com você, sei que não sou uma pessoa fácil de lidar e tenho muitos defeitos para corrigir, mas quero melhorar por você, por mim, por nós. Te prometo cada batida do meu coração, te prometo que teremos problemas, mas nunca sem solução. Não te prometo um final feliz, pois não quero que tenha um fim.
-    </p>
-
-<!-- Título para o temporizador -->
-<h2 id="titulo-temporizador">Tempo Juntos:</h2>
-
-<!-- Temporizador com caixas -->
-<div class="temporizador">
-    <div class="timer-box" id="days">
-        <span class="number-label">00</span>
-        <span class="unit-label">dias</span>
-    </div>
-    <div class="timer-box" id="hours">
-        <span class="number-label">00</span>
-        <span class="unit-label">horas</span>
-    </div>
-    <div class="timer-box" id="minutes">
-        <span class="number-label">00</span>
-        <span class="unit-label">minutos</span>
-    </div>
-    <div class="timer-box" id="seconds">
-        <span class="number-label">00</span>
-        <span class="unit-label">segundos</span>
-    </div>
-</div>
-
-    <!-- Script do temporizador -->
     <script>
-var startDate = new Date('2024-11-16T17:35:00'); // Data de início do relacionamento
+        // Controle da tela de bloqueio
+        const entrarBtn = document.getElementById('entrar-btn');
+        const telaBloqueio = document.getElementById('tela-bloqueio');
+        const musica = document.getElementById('musica');
 
-function updateTimer() {
-    var currentDate = new Date();
-    var timeDiff = currentDate - startDate;
+        entrarBtn.addEventListener('click', () => {
+            telaBloqueio.style.display = 'none';
+            musica.play();
+        });
+    // Controle do modal
+    const galleryItems = document.querySelectorAll('.gallery img, .gallery video');
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+    modal.innerHTML = `
+        <span class="modal-close">&times;</span>
+        <div class="modal-content"></div>
+    `;
+    document.body.appendChild(modal);
 
-    var days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+    const modalContent = modal.querySelector('.modal-content');
+    const modalClose = modal.querySelector('.modal-close');
 
-    // Atualiza os valores nas caixas
-    document.getElementById('days').querySelector('.number-label').innerText = days < 10 ? '0' + days : days;
-    document.getElementById('hours').querySelector('.number-label').innerText = hours < 10 ? '0' + hours : hours;
-    document.getElementById('minutes').querySelector('.number-label').innerText = minutes < 10 ? '0' + minutes : minutes;
-    document.getElementById('seconds').querySelector('.number-label').innerText = seconds < 10 ? '0' + seconds : seconds;
-}
+    galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+            modalContent.innerHTML = item.outerHTML;
+            modal.style.display = 'flex';
+        });
+    });
 
-// Atualiza a cada segundo
-setInterval(updateTimer, 1000);
-updateTimer(); // Chama a função uma vez para iniciar imediatamente
+    modalClose.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
 
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
 
-        // Ação do botão de entrar
-        document.getElementById('entrar-btn').onclick = function() {
-            document.getElementById('tela-bloqueio').style.display = 'none';
-            document.getElementById('musica').play();
-        };
+          // Temporizador
+          const startDate = new Date('2024-11-16T17:35:00');
+        function updateTimer() {
+            const currentDate = new Date();
+            const timeDiff = currentDate - startDate;
 
-        let index = 0;
-const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
+            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
 
-function showSlide() {
-    const slidesContainer = document.querySelector('.slides');
-    slidesContainer.style.transform = `translateX(-${index * 100}%)`;
-}
-
-function moveSlide(direction) {
-    index = (index + direction + totalSlides) % totalSlides; // Vai para o próximo ou anterior slide
-    showSlide();
-}
-
-let slideTimer = setInterval(function() {
-    moveSlide(1); // Muda a imagem automaticamente a cada 5 segundos
-}, 5000);
-
-function resetSlideTimer() {
-    clearInterval(slideTimer);
-    slideTimer = setInterval(function() {
-        moveSlide(1); // Muda a imagem automaticamente a cada 5 segundos
-    }, 5000);
-}
-
-function moveSlide(direction) {
-    index = (index + direction + totalSlides) % totalSlides; // Vai para o próximo ou anterior slide
-    showSlide();
-    resetSlideTimer(); // Reinicia o temporizador ao mover os slides
-}
-
-        // Obtém o elemento de áudio
-const musica = document.getElementById('musica');
-
-// Função para pausar a música quando a página for minimizada ou ficar em segundo plano
-function handleVisibilityChange() {
-    if (document.hidden) {
-        musica.pause(); // Pausa a música
-    } else {
-        musica.play(); // Retoma a música
-    }
-}
-
-// Adiciona o listener para o evento de visibilidade da página
-document.addEventListener('visibilitychange', handleVisibilityChange);
-
+            document.getElementById('days').querySelector('.number-label').innerText = days;
+            document.getElementById('hours').querySelector('.number-label').innerText = hours;
+            document.getElementById('minutes').querySelector('.number-label').innerText = minutes;
+            document.getElementById('seconds').querySelector('.number-label').innerText = seconds;
+        }
+        setInterval(updateTimer, 1000);
     </script>
 </body>
 </html>
